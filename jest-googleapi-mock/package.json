@@ -1,0 +1,43 @@
+{
+  "name": "jest-googleapi-mock",
+  "version": "0.2.1",
+  "description": "",
+  "main": "dist/setup.js",
+  "module": "src/setup.js",
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "npm i @google/maps",
+    "test": "jest",
+    "posttest": "npm prune"
+  },
+  "keywords": [],
+  "author": "iGitScor <sebastien.correaud@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.2",
+    "rollup": "^0.56.3",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-node-resolve": "^3.0.3"
+  },
+  "directories": {
+    "lib": "./src",
+    "test": "./__tests__"
+  },
+  "jest": {
+    "bail": true,
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "setupFiles": [
+      "./__setups__/geocode.js"
+    ],
+    "testMatch": [
+      "<rootDir>/__tests__/**/*.(test|spec).js?(x)"
+    ]
+  }
+}

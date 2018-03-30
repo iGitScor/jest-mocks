@@ -1,0 +1,12 @@
+{
+  "name": "jest-ngredux-mock",
+  "version": "0.1.1",
+  "description": "Jest NgRedux mock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "iGitScor <sebastien.correaud@gmail.com>",
+  "license": "MIT"
+}
